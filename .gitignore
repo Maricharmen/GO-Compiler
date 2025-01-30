@@ -1,0 +1,35 @@
+# Archivos de compilación de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+.env
+
+# Configuración del editor
+.vscode/
+.idea/
+*.sublime-*
+
+# Archivos de dependencias de Python
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Logs y archivos temporales
+*.log
+*.tmp
+
+# Archivos de pruebas generados
+.coverage
+nosetests.xml
+pytest_cache/
+
+# Archivos del sistema operativo (Mac y Windows)
+.DS_Store
+Thumbs.db
