@@ -29,8 +29,9 @@ def testLexer(archivoGo):
     lexer = Lexer(codigo)
     lexer.analizar()
     #imprimirTokens(lexer.tokens)
-    generarArchivo(lexer.tokens, "tokens.txt")
     estadoCompilacion(lexer.error)
+    if lexer.error == 0 : generarArchivo(lexer.tokens, "tokens.txt")
+    
  
 if __name__ == "__main__":
     testLexer("programa_1.go")
