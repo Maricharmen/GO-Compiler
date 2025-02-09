@@ -20,12 +20,13 @@ class Token:
         Retorna:
             str: Representación en formato 'Token(TIPO: VALOR)'.
         """
-        return f"Token({self.tipo}: {self.valor})"
+        return f"Token({self.tipo}: {self.valor}) \n"
 
 ''' Definir expresiones regulares para los tokens reconocidos '''
 TOKENS = [
     ("[COMMENT]", r"//[^\n]*"), 
-    ("[KEYWORD]", r"(package|import|func|var|return|int|string|main)"),
+    ("[KEYWORD]", r"(package|import|func|var|return|main)"),
+    ("[TYPE]", r"(int|string)"),
     ("[IDENTIFIER]", r"[a-zA-Z_][a-zA-Z0-9_]*"), 
     ("[NUMBER]", r"\d+(\.\d*)?"), 
     ("[STRING]", r"\"([^\"]|\\\")*\""),   
