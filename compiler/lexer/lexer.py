@@ -1,5 +1,5 @@
 import re
-from tokens import Token, TOKENS
+from .tokens import Token, TOKENS
 
 class Lexer:
     

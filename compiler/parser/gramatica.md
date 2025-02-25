@@ -1,4 +1,5 @@
-'''
+# Reglas gramaticales
+
 [PROGRAM] ::= "package" [IDENTIFIER] [IMPORT_SECTION] [FUNC_SECTION]
 
 [IMPORT_SECTION] ::= "import" [STRING] | ε
@@ -57,6 +58,3 @@
 [QUALIFIED_IDENTIFIER] ::= [IDENTIFIER] "." [IDENTIFIER]
 
 [METHOD_CALL] ::= [QUALIFIED_IDENTIFIER] "(" [ARGUMENTS] ")" | [IDENTIFIER] "(" [ARGUMENTS] ")"
-
-
-'''

@@ -25,14 +25,12 @@ class Token:
 ''' Definir expresiones regulares para los tokens reconocidos '''
 TOKENS = [
     ("[COMMENT]", r"//[^\n]*"), 
-    ("[KEYWORD]", r"(package|import|func|var|return|main)"),
-    ("[TYPE]", r"(int|string)"),
+    ("[KEYWORD]", r"(package|import|func|var|return|int|string)"),
     ("[IDENTIFIER]", r"[a-zA-Z_][a-zA-Z0-9_]*"), 
-    ("[NUMBER]", r"\d+(\.\d*)?"), 
+    ("[INTEGER]", r"\d+(\.\d*)?"), 
     ("[STRING]", r"\"([^\"]|\\\")*\""),   
     ("[DELIMITER]", r"(\(|\)|{|}|[\[\]\,;.])"),
-    ("[ARITHMETIC_OP]", r"[+\-*/%]"),  
-    ("[ASSIGNMENT_OP]", r":=|="),
+    ("[OPERATOR]", r":=|=|[+\-*/%]"),
     ("[WHITESPACE]", r"\s+")
 ]
 
