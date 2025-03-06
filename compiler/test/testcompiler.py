@@ -1,11 +1,7 @@
 import os
 
 from compiler.lexer.lexer import Lexer
-from compiler.parser.parser import Parser
-
-def leerArchivo(archivo):
-    with open(archivo, 'r') as f:
-        return f.read()
+from compiler.parser.parser import Parser  
 
 def imprimirTokens(tokens):
     for token in tokens:
@@ -24,8 +20,7 @@ def estadoLexico(errores, tokens):
         print("Compilacion exitosa")
         generarArchivo(tokens, "compiler/test/tokens.txt")
     
-def test(archivo):
-    codigo = leerArchivo(archivo)
+def test(codigo):
     lexer = Lexer(codigo)
     lexer.analizar()
     #imprimirTokens(lexer.tokens)
@@ -34,4 +29,5 @@ def test(archivo):
     parser.analizar()
 
 ruta_archivo = os.path.join(os.path.dirname(__file__), 'p1.go')
-test(ruta_archivo)
+with open(ruta_archivo, 'r') as f:
+        test(f.read())
