@@ -2,12 +2,11 @@ package main
 
 import "fmt"
 
-func info() {
-	// Declaracion de las tres variables
-	var nombre string = "Maricarmen"
-	var apellido string = "Buenfil"
-	var edad int = 20
-
-	// Mostrar el mensaje personalizado
-	fmt.Printf("Hola, soy %s  %s y tengo %d anios \n", nombre, apellido, edad)
+func prueba_2() {
+	var a int = 20
+	var b int = 10
+	c := a/b + a*b
+	fmt.Println("El valor de a es:", a)
+	fmt.Println("El valor de b es:", b)
+	fmt.Println("El resultado de a/b + a*b es:", c)
 }

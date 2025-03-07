@@ -2,12 +2,18 @@ package main
 
 import "fmt"
 
-func informacion() {
-	// Declaracion de las tres variables
-	var nombre string = "Maricarmen"
-	var apellido string = "Buenfil"
-	var edad int = 20
+func main() {
+	// Declaración de variables
+	var a int = 10
+	var b int = 5
 
-	fmt.Printf("Hola, soy %s  %s y tengo %d anios \n", nombre, apellido, edad)
+	// Suma de las variables
+	suma := a + b
 
+	// Valor de las variables
+	fmt.Println("El valor de a es: ", a)
+	fmt.Println("El valor de b es: ", b)
+
+	// Imprimir el resultado
+	fmt.Println("El resultado de a + b es:", suma)
 }

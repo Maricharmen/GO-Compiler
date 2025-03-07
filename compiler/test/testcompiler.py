@@ -11,13 +11,13 @@ def generarArchivo(tokens, archivo):
     with open(archivo, 'w') as f:
         for token in tokens:
             f.write(repr(token))
-    print("Generacion de archivo exitosa")
+    print("Generacion de archivo de tokens completado con exito")
 
 def estadoLexico(errores, tokens):
     if errores >= 1:
         print(f"Errores encontrados {errores}")
     else:
-        print("Compilacion exitosa")
+        print("Analisis lexico completado con exito")
         generarArchivo(tokens, "compiler/test/tokens.txt")
     
 def test(codigo):
