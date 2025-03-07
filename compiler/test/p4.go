@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func mensaje() {
+func info() {
 	// Declaracion de las tres variables
 	var nombre string = "Maricarmen"
 	var apellido string = "Buenfil"
