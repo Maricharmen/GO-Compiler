@@ -227,7 +227,7 @@ class Parser:
         self.variables[nombre_variable] = valor_variable
 
         # Depuración: Ver qué variables han sido almacenadas
-        # print(f"Variables almacenadas: {self.variables}")
+        print(f"Variables almacenadas: {self.variables}")
     
     def analizar_declaracion_variable(self):
         self.idx += 1  # Avanza al identificador de la variable (ej. 'num1')
@@ -312,3 +312,4 @@ class Parser:
             # Evaluar el argumento (puede ser una expresión aritmética, un número o una variable)
             argumento = self.analizar_argumento()
             print(f"Argumento de Printf: {argumento}")  # Simulación de impresión
+            

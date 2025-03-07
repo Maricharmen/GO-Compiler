@@ -8,7 +8,7 @@ func main() {
 	var b int = 5
 
 	// Suma de las variables
-	suma := a + b
+	suma := a + b - a
 
 	// Valor de las variables
 	fmt.Println("El valor de a es: ", a)
