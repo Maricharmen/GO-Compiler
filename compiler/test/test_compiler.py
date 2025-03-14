@@ -32,7 +32,7 @@ def test(codigo):
     parser= Parser(lexer.tokens)
     parser.analizar()
 
-ruta_archivo = os.path.join(os.path.dirname(__file__), 'p6.go')
+ruta_archivo = os.path.join(os.path.dirname(__file__), 'operacion4.go')
 with open(ruta_archivo, 'r') as f:
         test(f.read())
         
